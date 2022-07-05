@@ -17,14 +17,14 @@
 							"    var json=pm.response.json();\r",
 							"    pm.response.to.have.status(200);\r",
 							"   pm.expect(pm.response.text()).to.include(\"diagnosis_code\");\r",
-							"   \r",
+							"   //test\r",
 							"});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "909bfe52-b7d8-4cb1-9fdf-b65c979d2e26",
+			"id": "909bfe52-b7d8-4cb1-9fdf-b65c979d2e26",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
