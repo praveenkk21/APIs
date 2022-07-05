@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "9e9cbf06-8c8d-4cde-ac8e-33d81bea2ad6",
+		"name": "DXCodeGET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DXCodeGET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "125e0f01-03b7-4344-adad-447e5cfd1dfd",
+						"exec": [
+							"pm.test(\"DX code GET is Passed/Status code is 200\", function () {\r",
+							"    var json=pm.response.json();\r",
+							"    pm.response.to.have.status(200);\r",
+							"   pm.expect(pm.response.text()).to.include(\"diagnosis_code\");\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "909bfe52-b7d8-4cb1-9fdf-b65c979d2e26",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "hha",
+						"value": "{{hha}}"
+					},
+					{
+						"key": "user",
+						"value": "{{user}}"
+					},
+					{
+						"key": "instance_code",
+						"value": "{{instance_code}}"
+					}
+				],
+				"url": "{{WokringURL}}/v1/visits/{{cgtaskid}}/diagnosis-codes"
+			},
+			"response": []
+		}
+	]
+}
