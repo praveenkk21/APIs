@@ -13,12 +13,7 @@
 					"script": {
 						"id": "125e0f01-03b7-4344-adad-447e5cfd1dfd",
 						"exec": [
-							"pm.test(\"DX code GET is Passed/Status code is 200\", function () {\r",
-							"    var json=pm.response.json();\r",
-							"    pm.response.to.have.status(200);\r",
-							"   pm.expect(pm.response.text()).to.include(\"diagnosis_code\");\r",
-							"   \r",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
