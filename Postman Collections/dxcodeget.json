@@ -52,5 +52,32 @@
 			},
 			"response": []
 		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1055df31-0c07-4789-9601-61f7b7b1bee6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "41da0a47-615e-4c13-8521-41f4fcf9cddb",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"DX code GET is Passed/Status code is 200\", function () {",
+					"    var json=pm.response.json();",
+					"    pm.response.to.have.status(200);",
+					"   pm.expect(pm.response.text()).to.include(\"diagnosis_code\");",
+					"   ",
+					"});"
+				]
+			}
+		}
 	]
 }
