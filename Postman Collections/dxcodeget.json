@@ -32,18 +32,18 @@
 					},
 					{
 						"key": "hha",
-						"value": "{{hha}}"
+						"value": "1"
 					},
 					{
 						"key": "user",
-						"value": "{{user}}"
+						"value": "0"
 					},
 					{
 						"key": "instance_code",
-						"value": "{{instance_code}}"
+						"value": "Working"
 					}
 				],
-				"url": "{{WokringURL}}/v1/visits/{{cgtaskid}}/diagnosis-codes"
+				"url": "{{WokringURL}}/v1/visits/6977342/diagnosis-codes"
 			},
 			"response": []
 		}
